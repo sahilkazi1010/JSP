@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Collor message</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class = "container">
+<h1>Choose a color</h1>
+<button id="redbtn"onclick='redb()' >Red</button>
+<button id="greenbtn"onclick='greenb()'>Green</button>
+<button id="bluebtn"onclick='blueb()'>Blue</button>
+
+<div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+  .css file
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: top 50px;
+}
+button{
+    padding: 10px 20px;
+    margin:10px;
+    font: size 16px;
+    cursor: pointer;
+}
+
+#redbtn{
+    background-color: darkred;
+    color:white;
+}
+#greenbtn{
+    background-color: green;
+    color:white;
+
+}
+#bluebtn
+{
+    background-color:blue;
+    color:white;
+
+
+}
+.js file
+  
+function redb(){
+    alert('you clicked red')
+    document.body.style.background="red"
+
+}
+
+function greenb(){
+    alert('you clicked Green')
+    document.body.style.background="green"
+
+}
+function blueb(){
+    alert("You clickrd blue")
+    document.body.style.background="blue"
+}
