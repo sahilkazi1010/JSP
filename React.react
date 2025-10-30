@@ -1,0 +1,24 @@
+10.React (npx create-react-app in cmd,Delete css files) 
+App.jsx 
+import React,{useState} from 'react'; 
+funcƟ on App() { 
+ const [color, setColor] = useState("Red"); 
+ return ( 
+ <> 
+ <h1>Welcome to React</h1> 
+ <h2>You Selected color:{color}</h2> 
+ <buƩ on onClick={()=>setColor("Red")}>Red</buƩ on> 
+ <buƩ on onClick={()=>setColor("Green")}>Green</buƩ on> 
+ <buƩ on onClick={()=>setColor("Blue")}>Blue</buƩ on> 
+ </> 
+ ) 
+} 
+main.jsx 
+import { StrictMode } from 'react' 
+import { createRoot } from 'react-dom/client' 
+import App from './App.jsx' 
+createRoot(document.getElementById('root')).render( 
+ <StrictMode> 
+ <App /> 
+ </StrictMode>, 
+);
