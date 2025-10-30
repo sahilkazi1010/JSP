@@ -1,0 +1,36 @@
+class MyException extends Exception
+{
+	public MyException()
+	{
+		System.out.println("This is user define exception")
+    }
+}
+public class exception_demo_1
+{
+	public static void main(String args[])
+	{
+		int a[] = {5,10};
+		try
+		{
+			int x = a[2] / a[1];
+			throw new MyException();
+		}
+		catch(ArithmeticException e)
+		{
+			System.out.println("divide by zero!");
+		}
+		catch(ArrayIndexOutOfBoundsException e)
+		{
+			System.out.println("array index error!");
+		}
+		catch(ArrayStoreException e)
+		{
+			System.out.println("wrong datatype!");
+		}
+		finally
+		{
+			int y = a[1] / a[0];
+			System.out.println("Y:"+y);
+		}
+	}
+}
