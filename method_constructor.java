@@ -36,7 +36,8 @@ public class method_constructor
 		
 		s1.display();
 		s2.display();
-		s3.display();
+		s3.display("DSA");
 	}
 }
+
 		
