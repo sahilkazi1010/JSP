@@ -1,0 +1,20 @@
+import React from 'react'
+import { useState } from 'react'
+
+const App = () => {
+  const [color,setColor]=useState("not selected");
+  return (
+    <div>
+      <h1>You selected : {color}
+
+        <div className="buttons">
+          <button onClick={()=> setColor("Red")}>Red</button>
+          <button onClick={()=> setColor("Gree")}>Green</button>
+          <button onClick={()=> setColor("Blue")}>Blue</button>
+        </div>
+      </h1>
+    </div>
+  )
+}
+
+export default App
